@@ -16,13 +16,18 @@ In BDD, requirements are called Acceptance Criteria. This are the SCENARIOS, and
     - **Then:** expected outcome or result
     - **And:** combine more than one event or outcome
     - **But:** negative outcome (rarely used)   
-- Feature:
-- Feature File:
-- Scenario:
-- Scenario Outline:
+- **Feature:** any functionality is a feature
+- **Feature File:** different features require separate feature files. Such are written in such style: _UserLogin.feature_
+- **Scenario:** test for a functionality  
+- **Scenario Outline:** replaces variables or keywords for a value in the table
 
 **Key concepts of Cucumber:**
 
-- Step Definitions:
-- Hooks: 
+- **Step Definitions:** an expression that links it to one or more Gherkin steps
+- **Tags:** organize features and scenarios
+- **Hooks:** blocks of code that run at various points in execution cycle
+    - **@Before**
+    - **@After**
+    - **@BeforeStep**
+    - **@AfterStep**
 
