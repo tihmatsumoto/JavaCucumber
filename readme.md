@@ -26,8 +26,8 @@ In BDD, requirements are called Acceptance Criteria. This are the SCENARIOS, and
 - **Step Definitions:** an expression that links it to one or more Gherkin steps
 - **Tags:** organize features and scenarios
 - **Hooks:** blocks of code that run at various points in execution cycle
-    - **@Before**
-    - **@After**
-    - **@BeforeStep**
-    - **@AfterStep**
+    - **@Before:** runs after every before each scenario
+    - **@After:** runs after every after each scenario
+    - **@BeforeStep:** runs before every step
+    - **@AfterStep:** runs after every step
 
