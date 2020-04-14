@@ -1,8 +1,10 @@
 package steps;
 
+import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.After;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,10 +15,14 @@ public class StepDefinitions {
 
     private WebDriver driver;
 
-    @Given("I am in the login page of Sauce Labs WebPage")
-    public void i_am_in_the_login_page_of_Sauce_Labs_WebPage() {
+    @Before()
+    public void setUp() {
         System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver");
         driver = new ChromeDriver();
+    }
+
+    @Given("I am in the login page of Sauce Labs WebPage")
+    public void i_am_in_the_login_page_of_Sauce_Labs_WebPage() {
         driver.get("https://www.saucedemo.com/");
     }
 
@@ -30,6 +36,10 @@ public class StepDefinitions {
     @Then("I should be taken to the Inventory page")
     public void i_should_be_taken_to_the_Inventory_page() {
         assertEquals("https://www.saucedemo.com/inventory.html", driver.getCurrentUrl());
+    }
+
+    @After()
+    public void tearDown() {
         driver.quit();
     }
 }
