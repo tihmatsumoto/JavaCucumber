@@ -2,7 +2,7 @@
 
 
 ---
-###### What is BDD?
+#### What is BDD?
 Behavior Driven Development is a process to work in a collaborative fashion and to bridge the gap between business and technical people.
 They are derived as multiple chunks with limited number of features for the development team. It is also important for documentation.
 
@@ -33,9 +33,13 @@ In BDD, requirements are called Acceptance Criteria. This are the SCENARIOS, and
 
 **Usage:**
 - Allows to use same Gherkin Statement to avoid writing same step definition method over and over
-> @Given ("I am in the login page")
-> @Given ("Im am in the login page for SauceDemo Labs webpage")
+    > @Given ("I am in the login page")
+
+    > @Given ("Im am in the login page for SauceDemo Labs webpage")
 - Scenario Outline for testing using multiple variables (mult-test data) in a table
-    - Remember to use '' and "" in those <variables> to avoid errors and skipped steps
-        > When I enter valid '<username>' and '<password>'
+    - Remember to use '' and "" in those < variables > to avoid errors and skipped steps
+        > When I enter valid '< username >' and '< password >'
+- Allows for DataTable usage, where variables can be used per step
+    > When I enter valid credentials
     
+    > |test|password|
