@@ -3,7 +3,11 @@ Feature: Login functionality
   As a valid Sauce Labs customer
   I want to login successfully
 
-  Scenario: Login Successful
+  Scenario Outline: Login Successful
     Given I am in the login page of Sauce Labs WebPage
-    When I enter valid credentials
+    When I enter valid '<username>' and '<password>'
     Then I should be taken to the Inventory page
+    Examples:
+      |username       |password    |
+      |standard_user  |secret_sauce|
+      |problem_user   |secret_sauce|

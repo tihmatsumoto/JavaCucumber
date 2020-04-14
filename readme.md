@@ -31,3 +31,11 @@ In BDD, requirements are called Acceptance Criteria. This are the SCENARIOS, and
     - **@BeforeStep:** runs before every step
     - **@AfterStep:** runs after every step
 
+**Usage:**
+- Allows to use same Gherkin Statement to avoid writing same step definition method over and over
+> @Given ("I am in the login page")
+> @Given ("Im am in the login page for SauceDemo Labs webpage")
+- Scenario Outline for testing using multiple variables (mult-test data) in a table
+    - Remember to use '' and "" in those <variables> to avoid errors and skipped steps
+        > When I enter valid '<username>' and '<password>'
+    

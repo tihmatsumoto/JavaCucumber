@@ -20,15 +20,16 @@ public class StepDefinitions {
         driver.get("https://www.saucedemo.com/");
     }
 
-    @When("I enter valid credentials")
-    public void i_enter_valid_credentials() {
-        driver.findElement(By.id("user-name")).sendKeys("standard_user");
-        driver.findElement(By.id("password")).sendKeys("secret_sauce");
+    @When("I enter valid {string} and {string}")
+    public void i_enter_valid_credentials(String username, String password) {
+        driver.findElement(By.id("user-name")).sendKeys(username);
+        driver.findElement(By.id("password")).sendKeys(password);
         driver.findElement(By.cssSelector(".btn_action")).click();
     }
 
     @Then("I should be taken to the Inventory page")
     public void i_should_be_taken_to_the_Inventory_page() {
         assertEquals("https://www.saucedemo.com/inventory.html", driver.getCurrentUrl());
+        driver.quit();
     }
 }
