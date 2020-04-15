@@ -48,3 +48,12 @@ In BDD, requirements are called Acceptance Criteria. This are the SCENARIOS, and
             |test|password|
     ~~~~
 - **If using JUnit or TestNG**, features file can be executed in parallel
+
+**Runner Class**
+- Test Runner Class also acts as an interlink between feature files and step definitions class
+- Annotations needed are @RunWith and CucumberOptions
+    ~~~
+    @RunWith(Cucumber.class)
+    @CucumberOptions(features = "<path of feature file>", glue = "<path of step definitions class>", plugin = "<report types>")
+    ~~~
+- 

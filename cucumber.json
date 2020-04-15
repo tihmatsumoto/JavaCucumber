@@ -1,0 +1,171 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-04-15T17:18:25.833Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1559849000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.setUp()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Login Successful",
+        "description": "",
+        "id": "login-functionality;login-successful;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 84048000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 526151000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am in the login page of Sauce Labs WebPage",
+            "match": {
+              "location": "StepDefinitions.i_am_in_the_login_page_of_Sauce_Labs_WebPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 604498000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter valid \u0027standard_user\u0027 and \u0027secret_sauce\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027standard_user\u0027",
+                  "offset": 14
+                },
+                {
+                  "val": "\u0027secret_sauce\u0027",
+                  "offset": 34
+                }
+              ],
+              "location": "StepDefinitions.i_enter_valid_credentials(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6527000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should be taken to the Inventory page",
+            "match": {
+              "location": "StepDefinitions.i_should_be_taken_to_the_Inventory_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-04-15T17:18:28.685Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1170126000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.setUp()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Login Successful",
+        "description": "",
+        "id": "login-functionality;login-successful;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 83552000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefinitions.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 408713000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am in the login page of Sauce Labs WebPage",
+            "match": {
+              "location": "StepDefinitions.i_am_in_the_login_page_of_Sauce_Labs_WebPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1080808000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter valid \u0027problem_user\u0027 and \u0027secret_sauce\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027problem_user\u0027",
+                  "offset": 14
+                },
+                {
+                  "val": "\u0027secret_sauce\u0027",
+                  "offset": 33
+                }
+              ],
+              "location": "StepDefinitions.i_enter_valid_credentials(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9155000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should be taken to the Inventory page",
+            "match": {
+              "location": "StepDefinitions.i_should_be_taken_to_the_Inventory_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login functionality",
+    "description": "  In order to access Swag Labs store\n  As a valid Sauce Labs customer\n  I want to login successfully",
+    "id": "login-functionality",
+    "keyword": "Feature",
+    "uri": "classpath:features/Login.feature",
+    "tags": []
+  }
+]
